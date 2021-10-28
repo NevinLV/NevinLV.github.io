@@ -6,59 +6,6 @@
     <title>Регистрация</title>
 </head>
 <body>
-    <div id="register">
-        <div id="Title">
-            <h1>Впервые ВКонтакте?</h1>
-            <h2>Моментальная регистрация</h2>
-        </div>
-        <div id="FLName">
-            <input placeholder="Ваше имя">
-            <input placeholder="Ваша фамилия">
-        </div>
-        <div id="birthday">
-            <p>Дата рождения</p>
-            <select id="day">
-                <option class="default">День</option>
-            </select>
-            <script>
-                let day = document.getElementById('day');
-                for (var i=1; i<=31;i++){
-                    day.options[day.options.length] = new Option(i, i);
-                }
-            </script>
-
-            <select id="month">
-                <option>Месяц</option>
-                <option>Январь</option>
-                <option>Февраль</option>
-                <option>Март</option>
-                <option>Апрель</option>
-                <option>Май</option>
-                <option>Июнь</option>
-                <option>Июль</option>
-                <option>Август</option>
-                <option>Сентябрь</option>
-                <option>Октябрь</option>
-                <option>Ноябрь</option>
-                <option>Декабрь</option>
-            </select>
-
-            <select id="year">
-                <option>Год</option>
-            </select>
-            <script>
-                let year = document.getElementById('year');
-                for (var i=2007; i>=1902; i--){
-                    year.options[year.options.length] = new Option(i, i);
-                }
-            </script>
-        </div>
-
-        <div id="alternative">
-            <button id="next">Продолжить регистрацию</button>
-            <button id="Facebook"><b>Войти через Facebook</b></button>
-        </div>
-
-    </div>
+   
 </body>
 </html>
