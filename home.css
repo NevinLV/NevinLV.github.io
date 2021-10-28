@@ -127,6 +127,12 @@ button{
     background-color: var(--t6);
 }
 
+.date{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
 .go{
     background-color: var(--black);
     color: var(--white);
