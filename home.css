@@ -3,6 +3,12 @@
     --gray: #AAAAAA;
     --lgray: #D3D3D3;
     --white: #F0F0F0;
+    --t1: #EA6565;
+    --t2: #F5C23E;
+    --t3: #FFE665;
+    --t4: #6FDD54;
+    --t5: #1FA8D3;
+    --t6: #4745BB;
 }
 
 body{
@@ -11,6 +17,7 @@ body{
     font-family: Arial;
     background-color: var(--white);
 }
+
 header{
     padding-left: 60px;
     padding-right: 60px;
@@ -68,6 +75,8 @@ button{
     background-color: white;
     border-radius: 5px;
     margin-right: 10px;
+    padding: 20px;
+    margin-bottom: 10px;
     
     position: relative;
     flex: none;
@@ -79,22 +88,55 @@ button{
 .autor{
     font-size: 12px;
     color: #444444;
+    margin-bottom: 15px;
 }
 .categor{
-    font-size: 12px;
+    font-size: 16px;
 }
 .tags{
-    font-size: 12px;
+    font-size: 15px;
+    display: block;
+    width: 100%;
 }
+
+.tags > div{
+    margin: 3px 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color:white;
+    border-radius: 4px;
+    text-transform: uppercase;
+    display: inline-flex;
+}
+.tags #t1{
+    background-color: var(--t1);
+}
+.tags #t2{
+    background-color: var(--t2);
+}
+.tags #t3{
+    background-color: var(--t3);
+}
+.tags #t4{
+    background-color: var(--t4);
+}
+.tags #t5{
+    background-color: var(--t5);
+}
+.tags #t6{
+    background-color: var(--t6);
+}
+
 .go{
     background-color: var(--black);
     color: var(--white);
-    font-size: 13px;
-    border-radius: 3px;
+    font-size: 14px;
+    border-radius: 4px;
+    padding: 8px 40px;
 
     position: absolute;
-    bottom: 0px;
-    right: 0px;
+    bottom: 20px;
+    right: 20px;
 }
 
 .List{
