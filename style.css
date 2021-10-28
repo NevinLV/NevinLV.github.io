@@ -13,7 +13,7 @@ body{
 
 
 .Section{
-    width: 97.9vw;
+    width: calc(100vw - 16.1px);
     height: 100vh;
 }
 
