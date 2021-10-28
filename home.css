@@ -15,24 +15,24 @@
 
 body{
     margin: 0em;
-    padding-top: 60em;
+    padding-top: 3em;
     font-family: Arial;
     background-color: var(--white);
 }
 
 header{
-    padding-left: 60em;
-    padding-right: 60em;
-    padding-top: 20em;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 1.5em;
 
-    width: calc(100% - 120em);
-    height: 40em;
+    width: calc(100% - 120px);
+    height: 3em;
 
     display: flex;
 
     position: fixed;
-    top: 0em;
-    left: 0em;
+    top: 0px;
+    left: 0px;
 
     background-color: var(--black);
     color: var(--gray);
@@ -42,23 +42,23 @@ header{
 
 #user{
     position: absolute;
-    right: 60em;
+    right: 60px;
 }
 
 h1{
     font-weight: 100;
-    font-size: 24em;
+    font-size: 24px;
 }
 
 #board h1{
     font-weight: 100;
-    font-size: 16em;
+    font-size: 16px;
     color: white;
-    padding-left: 10em;
+    padding-left: 10px;
 }
 
 #view{
-    margin-left: 50em;
+    margin-left: 50px;
 }
 #categories{
     display: block;
@@ -74,15 +74,15 @@ button{
     position: fixed;
     background-color: var(--lblack);
     height: 100vh;
-    width: 250em;
-    padding-top: 40em;
+    width: 250px;
+    padding-top: 40px;
 }
 
 .categoriesBtn{
-    font-size: 14em;
+    font-size: 14px;
     background-color: var(--lblack);
-    padding: 10em 30em;
-    margin-bottom: 2em;
+    padding: 10px 30px;
+    margin-bottom: 2px;
     width: calc(100% );
     text-align: left;
     color: var(--white);
@@ -90,7 +90,7 @@ button{
 
 .categoriesBtn.Global{
     font-weight: bold;
-    padding: 10em 10em;
+    padding: 10px 10px;
 }
 
 .categoriesBtn:hover{
@@ -104,15 +104,15 @@ button{
 .search{
     position: relative;
     background-color: white;
-    border-radius: 5em;
-    padding: 20em;
-    margin-right: 50em;
+    border-radius: 5px;
+    padding: 20px;
+    margin-right: 50px;
     display: block;
 }
 
 .search p{
-    width: 150em;
-    margin-bottom: 5em;
+    width: 150px;
+    margin-bottom: 5px;
     position: relative;
 }
 
@@ -125,12 +125,12 @@ button{
 }
 
 .search input{
-    font-size: 18em;
+    font-size: 18px;
     background-color: var(--white);
-    border-radius: 5em;
+    border-radius: 5px;
     border: none;
-    padding: 10em 15em;
-    width: calc(100% - 30em);
+    padding: 10px 15px;
+    width: calc(100% - 30px);
 }
 .search input:focus{
     background-color: var(--white);
@@ -140,61 +140,61 @@ button{
 
 .search select{
     color: var(--gray);
-    font-size: 18em;
+    font-size: 18px;
     background-color: var(--white);
-    border-radius: 5em;
+    border-radius: 5px;
     border: none;
-    padding: 10em 15em;
+    padding: 10px 15px;
 }
 
 .find{
     background-color: var(--black);
     color: var(--white);
-    font-size: 14em;
-    border-radius: 4em;
-    padding: 8em 40em;
-    margin-top: 20em;
-    margin-left: calc(100% - 120em);
+    font-size: 14px;
+    border-radius: 4px;
+    padding: 8px 40px;
+    margin-top: 20px;
+    margin-left: calc(100% - 120px);
 }
 
 
 
 .card{
-    width: 325em;
-    height: 205em;
+    width: 325px;
+    height: 205px;
     background-color: white;
-    border-radius: 5em;
-    margin-right: 10em;
-    padding: 20em;
-    margin-bottom: 10em;
+    border-radius: 5px;
+    margin-right: 10px;
+    padding: 20px;
+    margin-bottom: 10px;
     
     position: relative;
     flex: none;
 }
 
 .title{
-    font-size: 24em;
+    font-size: 24px;
 }
 .autor{
-    font-size: 12em;
+    font-size: 12px;
     color: #444444;
-    margin-bottom: 15em;
+    margin-bottom: 15px;
 }
 .categor{
-    font-size: 16em;
+    font-size: 16px;
 }
 .tags{
-    font-size: 15em;
+    font-size: 15px;
     display: block;
     width: 100%;
 }
 
 .tags > div{
-    margin: 3em 0em;
-    padding-left: 10em;
-    padding-right: 10em;
+    margin: 3px 0px;
+    padding-left: 10px;
+    padding-right: 10px;
     color:white;
-    border-radius: 4em;
+    border-radius: 4px;
     text-transform: uppercase;
     display: inline-flex;
 }
@@ -219,20 +219,20 @@ button{
 
 .date{
     position: absolute;
-    bottom: 20em;
-    left: 20em;
+    bottom: 20px;
+    left: 20px;
 }
 
 .go{
     background-color: var(--black);
     color: var(--white);
-    font-size: 14em;
-    border-radius: 4em;
-    padding: 8em 40em;
+    font-size: 14px;
+    border-radius: 4px;
+    padding: 8px 40px;
 
     position: absolute;
-    bottom: 20em;
-    right: 20em;
+    bottom: 20px;
+    right: 20px;
 }
 
 .go:hover{
@@ -256,13 +256,13 @@ button{
     width: 0;
   }
 
-  @media screen and (min-width: 1130em) {
+  @media screen and (min-width: 1130px) {
     .search{
         display: flex;
     }
     .search #select{
         position: absolute;
-        right: 20em;
+        right: 20px;
     }
 
     .search #input{
@@ -274,11 +274,11 @@ button{
     }
     
     .search input{
-        font-size: 18em;
+        font-size: 18px;
         background-color: var(--white);
-        border-radius: 5em;
+        border-radius: 5px;
         border: none;
-        padding: 10em 15em;
+        padding: 10px 15px;
         width: 50%;
     }
     .search input:focus{
@@ -288,31 +288,31 @@ button{
     
     .search select{
         color: var(--gray);
-        font-size: 18em;
+        font-size: 18px;
         background-color: var(--white);
-        border-radius: 5em;
+        border-radius: 5px;
         border: none;
-        padding: 10em 15em;
+        padding: 10px 15px;
     }
 
     .find{
         background-color: var(--black);
         color: var(--white);
-        font-size: 14em;
-        border-radius: 4em;
-        padding: 8em 40em;
+        font-size: 14px;
+        border-radius: 4px;
+        padding: 8px 40px;
     
         position: absolute;
-        bottom: 20em;
-        right: 20em;
+        bottom: 20px;
+        right: 20px;
     }
   }
 
-  @media screen and (min-width: 702em) {
+  @media screen and (min-width: 702px) {
     #board{
         display:block;
     }
     #view{
-        margin-left: 300em;
+        margin-left: 300px;
     }
   }
