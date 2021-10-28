@@ -1,5 +1,7 @@
 :root {
     --black: #1F1F1F;
+    --lblack: #353535;
+    --llblack: #585858;
     --gray: #AAAAAA;
     --lgray: #D3D3D3;
     --white: #F0F0F0;
@@ -13,7 +15,7 @@
 
 body{
     margin: 0px;
-    padding: 60px;
+    padding-top: 60px;
     font-family: Arial;
     background-color: var(--white);
 }
@@ -34,6 +36,8 @@ header{
 
     background-color: var(--black);
     color: var(--gray);
+
+    z-index: 999999;
 }
 
 #user{
@@ -46,6 +50,16 @@ h1{
     font-size: 24px;
 }
 
+#board h1{
+    font-weight: 100;
+    font-size: 16px;
+    color: white;
+    padding-left: 10px;
+}
+
+#view{
+    margin-left: 300px;
+}
 #categories{
     display: block;
 }
@@ -55,19 +69,85 @@ button{
     border: none;
 }
 
-.categoriesBtn{
-    font-size: 14px;
-    background-color: white;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 10px;
-    width: 134pt;
+#board{
+    position: fixed;
+    background-color: var(--lblack);
+    height: 100vh;
+    width: 250px;
+    padding-top: 40px;
 }
 
-#other{
-    background-color: var(--black);
+.categoriesBtn{
+    font-size: 14px;
+    background-color: var(--lblack);
+    padding: 10px 30px;
+    margin-bottom: 2px;
+    width: calc(100% );
+    text-align: left;
     color: var(--white);
 }
+
+.categoriesBtn.Global{
+    font-weight: bold;
+    padding: 10px 10px;
+}
+
+.categoriesBtn:hover{
+    background-color: var(--black);
+}
+.categoriesBtn:active {
+    background-color: black;
+}
+
+
+.search{
+    position: relative;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    margin-right: 50px;
+    display: flex;
+}
+
+.search p{
+    width: 150px;
+    margin-bottom: 5px;
+}
+
+.search #input{
+    width: 100%;
+}
+.search #select{
+    position: absolute;
+    right: 20px;
+}
+#select #category{
+    width: 100%;
+}
+
+.search input{
+    font-size: 18px;
+    background-color: var(--white);
+    border-radius: 5px;
+    border: none;
+    padding: 10px 15px;
+    width: 50%;
+}
+.search input:focus{
+    background-color: var(--white);
+    outline: 0;
+}
+
+.search select{
+    color: var(--gray);
+    font-size: 18px;
+    background-color: var(--white);
+    border-radius: 5px;
+    border: none;
+    padding: 10px 15px;
+}
+
+
 
 .card{
     width: 325px;
@@ -143,6 +223,13 @@ button{
     position: absolute;
     bottom: 20px;
     right: 20px;
+}
+
+.go:hover{
+    background-color: var(--lblack);
+}
+.go:active {
+    background-color: black;
 }
 
 .List{

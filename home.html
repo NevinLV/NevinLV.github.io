@@ -14,7 +14,10 @@
         </div>
     </header>
 
-    <h1>КАТЕГОРИИ</h1>
+    
+    <div id="board">
+        <button class="categoriesBtn Global">ГЛАВНАЯ</button>
+        <button class="categoriesBtn Global">КАТЕГОРИИ</button>
     <div id="categories"> 
         <button class="categoriesBtn" id="it">
             IT
@@ -48,7 +51,66 @@
         </button>
         
     </div>
-
+    </div>
+    <div id="view">
+    <h1>ПОИСК</h1>
+    <div class="search">
+        <div id="input">
+            <div class="entry">
+                <p>
+                    Название курса
+                </p>
+                <input type="text" id="name">
+            </div>
+            <div class="entry">
+                <p>
+                    Автор:
+                </p>
+                <input type="text" id="autor">
+            </div>
+            <div class="entry">
+                <p>
+                    Теги:
+                </p>
+                <input type="text" id="tegs">
+            </div>
+        </div>
+        <div id="select">
+            <div class="entry">
+                <p>Дата публикации</p>
+                <select id="day"> 
+                    <option>День</option>
+                    <option>1</option>
+                </select>
+                <select id="month">
+                    <option>Месяц</option>
+                    <option>Март</option>
+                </select>
+                <select id="year">
+                    <option>Год</option>
+                    <option>2001</option>
+                </select>
+            </div>
+            <div class="entry">
+                <p>Категория</p>
+                <select id="category">
+                    <option>Категория</option>
+                    <option>IT</option>
+                    <option>Математика</option>
+                    <option>Физика</option>
+                    <option>Химия</option>
+                    <option>Здоровье</option>
+                    <option>Языки</option>
+                    <option>Искусство</option>
+                    <option>Кулинария</option>
+                    <option>Прочее</option>
+                </select>
+            </div>
+        </div>
+        <button class="go">
+            Найти
+        </button>
+    </div>
     <h1>ПОПУЛЯРНЫЕ КУРСЫ</h1>
     <div class="List" id="popular">
         <div class="card" id="1">
@@ -379,6 +441,7 @@
             <div class="date">01.01.1967</div>
             <button class="go">ПЕРЕЙТИ</button>
         </div>
+    </div>
     </div>
 </body>
 </html>
