@@ -42,7 +42,18 @@ header{
 
 #user{
     position: absolute;
-    right: 3em;
+    right: 60px;
+    top: 70px;
+}
+
+#logo{
+    font-size: 45px;
+    position: absolute;
+    left: 60px;
+    top: 55px;
+}
+#firstWord{
+    color: var(--white);
 }
 
 h1{
