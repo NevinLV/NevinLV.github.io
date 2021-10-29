@@ -26,7 +26,7 @@ header{
     padding-top: 30px;
 
     width: calc(100% - 120px);
-    height: 50px;
+    height: 150px;
 
     display: flex;
 
@@ -59,7 +59,7 @@ h1{
 
 #view{
     margin-left: 50px;
-    padding-top: 50px;
+    padding-top: 120px;
 }
 #categories{
     display: block;
@@ -311,9 +311,9 @@ button{
 
   @media screen and (min-width: 702px) {
     #board{
-        display:block;
+        display:none;
     }
     #view{
-        margin-left: 300px;
+        margin-left: 40px;
     }
   }
