@@ -1,0 +1,147 @@
+/* Поля ввода */
+input{
+    font-size: px;
+    background-color: var(--white);
+    border-radius: 5px;
+    border: none;
+    padding: 10px 15px;
+    width: 100%;
+    display: inline-block;
+}
+input:focus{
+    background-color: var(--white);
+    outline: 0;
+}
+
+
+/* Поля выбора */
+select{
+    color: var(--gray);
+    font-size: 18px;
+    background-color: var(--white);
+    border-radius: 5px;
+    border: none;
+    padding: 10px 15px;
+}
+
+
+/* Кнокпи */
+button{
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 14px;
+    border-radius: 4px;
+    padding: 8px 40px;
+    text-align: center;
+    border: none;
+}
+button:hover{
+    background-color: var(--lblack);
+}
+button:active {
+    background-color: black;
+}
+
+
+/* Заголовки */
+h1{
+    font-weight: 100;
+    font-size: clamp(1.1rem, 0.7153rem + 1.6368vw, 1.5rem);
+}
+
+
+/* Абзацы */
+p{
+    width: 150px;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+
+/* Горизонтальные листы */
+.List{
+    display: inline-flex;
+    overflow-x: scroll; 
+    width: 100%;
+}
+.List::-webkit-scrollbar {
+    width: 0;
+}
+
+
+/* Блоки информации*/
+.block{
+    background-color: white;
+    border-radius: 5px;
+    margin-right: 10px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+/* Карты */
+.card{
+    width: 325px;
+    height: 205px;    
+    position: relative;
+    flex: none;
+}
+        /* Заголовок карты */
+        .card .title{
+            font-size: 24px;
+        }
+        /* Автор */
+        .card .autor{
+            font-size: 12px;
+            color: #444444;
+            margin-bottom: 15px;
+        }
+        /* Категория */
+        .card .categor{
+            font-size: 16px;
+        }
+        /* Теги */
+        .card .tags{
+            font-size: 15px;
+            display: block;
+            width: 100%;
+        }
+
+                .tags > div{
+                    margin: 3px 0px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    color:white;
+                    border-radius: 4px;
+                    text-transform: uppercase;
+                    display: inline-flex;
+                }
+                .tags #t1{
+                    background-color: var(--t1);
+                }
+                .tags #t2{
+                    background-color: var(--t2);
+                }
+                .tags #t3{
+                    background-color: var(--t3);
+                }
+                .tags #t4{
+                    background-color: var(--t4);
+                }
+                .tags #t5{
+                    background-color: var(--t5);
+                }
+                .tags #t6{
+                    background-color: var(--t6);
+                }
+        /* Дата */
+        .card .date{
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+        }
+
+        .card button{
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+        }

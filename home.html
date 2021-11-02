@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <!-- <link rel="stylesheet" href="home.css"> -->
-    <link rel="stylesheet" href="homeMob.css">
+    <link rel="stylesheet" href="home.css">
     <meta charset="UTF-8">
     <title>Course Space</title>
 </head>
@@ -15,434 +14,398 @@
         </div>
     </header>
 
-    
-    <div id="board">
-        <button class="categoriesBtn Global">ГЛАВНАЯ</button>
-        <button class="categoriesBtn Global">КАТЕГОРИИ</button>
-    <div id="categories"> 
-        <button class="categoriesBtn" id="it">
-            IT
-        </button>
-        <button class="categoriesBtn" id="math">
-            МАТЕМАТИКА
-        </button>
-        <button class="categoriesBtn" id="physics">
-            ФИЗИКА
-        </button>
-        <button class="categoriesBtn" id="chemistry">
-            ХИМИЯ
-        </button>
-        <button class="categoriesBtn" id="health">
-            ЗДОРОВЬЕ
-        </button>
-        <button class="categoriesBtn" id="languages">
-            ЯЗЫКИ
-        </button>
-        <button class="categoriesBtn" id="art">
-            ИСКУССТВО
-        </button>
-        <button class="categoriesBtn" id="music">
-            МУЗЫКА
-        </button>
-        <button class="categoriesBtn" id="cooking">
-            КУЛИНАРИЯ
-        </button>
-        <button class="categoriesBtn" id="other">
-            ОСТАЛЬНОЕ
-        </button>
-        
-    </div>
-    </div>
-    <div id="view">
-    <h1>ПОИСК</h1>
-    <div class="search">
-        <div id="input">
-            <div class="entry">
-                <p>
-                    Название курса
-                </p>
-                <input type="text" id="name">
-            </div>
-            <div class="entry">
-                <p>
-                    Автор:
-                </p>
-                <input type="text" id="autor">
-            </div>
-            <div class="entry">
-                <p>Категория</p>
-                <select id="category">
-                    <option>Категория</option>
-                    <option>IT</option>
-                    <option>Математика</option>
-                    <option>Физика</option>
-                    <option>Химия</option>
-                    <option>Здоровье</option>
-                    <option>Языки</option>
-                    <option>Искусство</option>
-                    <option>Кулинария</option>
-                    <option>Прочее</option>
-                </select>
-            </div>
-        </div>
-        <div id="select">
-            <div class="entry">
-                <p>Дата публикации</p>
-                <select id="day"> 
-                    <option>День</option>
-                    <option>1</option>
-                </select>
-                <select id="month">
-                    <option>Месяц</option>
-                    <option>Март</option>
-                </select>
-                <select id="year">
-                    <option>Год</option>
-                    <option>2001</option>
-                </select>
-            </div>
-            <div class="entry">
-                <p>
-                    Теги:
-                </p>
-                <input type="text" id="tegs">
-            </div>
-        </div>
-        <button class="find">
-            Найти
-        </button>
-    </div>
-    <h1>ПОПУЛЯРНЫЕ КУРСЫ</h1>
-    <div class="List" id="popular">
-        <div class="card" id="1">
-            <div class="title">Title</div>
-            <div class="autor">Автор:</div>
-            <div class="categor">Категория:</div>
-            <div class="tags">Теги: </br>
-                <div id="t1">
-                    Тег #1
-                </div>
-                <div id="t2">
-                    Тег #2
-                </div>
-                <div id="t3">
-                    Тег #3
-                </div>
-                <div id="t4">
-                    Тег #4
-                </div>
-                <div id="t5">
-                    Тег #5
-                </div>
-                <div id="t6">
-                    Тег #6
+    <main>
+        <h1>ПОИСК</h1>
+        <div class="search block">
+            
+            <div id="input">
+                <p>Название курса</p>
+                <div class="entry">
+                    <input type="text" id="name">
+                    <button id="filtersBtn" 
+                    onclick=Filter()>Фильтры</button>
+                    <button class="find">Найти</button>
                 </div>
             </div>
-            <div class="date">01.01.1967</div>
-            <button class="go">ПЕРЕЙТИ</button>
-        </div>
-        <div class="card" id="2">
-            <div class="title">Title</div>
-            <div class="autor">Автор:</div>
-            <div class="categor">Категория:</div>
-                        <div class="tags">Теги: </br>
-                <div id="t1">
-                    Тег #1
-                </div>
-                <div id="t2">
-                    Тег #2
-                </div>
-                <div id="t3">
-                    Тег #3
-                </div>
-                <div id="t4">
-                    Тег #4
-                </div>
-                <div id="t5">
-                    Тег #5
-                </div>
-                <div id="t6">
-                    Тег #6
-                </div>
-            </div>
-            <div class="date">01.01.1967</div>
-            <button class="go">ПЕРЕЙТИ</button>
-        </div>
-        <div class="card" id="2">
-            <div class="title">Title</div>
-            <div class="autor">Автор:</div>
-            <div class="categor">Категория:</div>
-            <div class="tags">Теги: </br>
-                <div id="t1">
-                    Тег #1
-                </div>
-                <div id="t2">
-                    Тег #2
-                </div>
-                <div id="t3">
-                    Тег #3
-                </div>
-                <div id="t4">
-                    Тег #4
-                </div>
-                <div id="t5">
-                    Тег #5
-                </div>
-                <div id="t6">
-                    Тег #6
-                </div>
-            </div>
-            <div class="date">01.01.1967</div>
-            <button class="go">ПЕРЕЙТИ</button>
-        </div>
-        <div class="card" id="3">
-            <div class="title">Title</div>
-            <div class="autor">Автор:</div>
-            <div class="categor">Категория:</div>
-                        <div class="tags">Теги: </br>
-                <div id="t1">
-                    Тег #1
-                </div>
-                <div id="t2">
-                    Тег #2
-                </div>
-                <div id="t3">
-                    Тег #3
-                </div>
-                <div id="t4">
-                    Тег #4
-                </div>
-                <div id="t5">
-                    Тег #5
-                </div>
-                <div id="t6">
-                    Тег #6
-                </div>
-            </div>
-            <div class="date">01.01.1967</div>
-            <button class="go">ПЕРЕЙТИ</button>
-        </div>
-        <div class="card" id="4">
-            <div class="title">Title</div>
-            <div class="autor">Автор:</div>
-            <div class="categor">Категория:</div>
-                        <div class="tags">Теги: </br>
-                <div id="t1">
-                    Тег #1
-                </div>
-                <div id="t2">
-                    Тег #2
-                </div>
-                <div id="t3">
-                    Тег #3
-                </div>
-                <div id="t4">
-                    Тег #4
-                </div>
-                <div id="t5">
-                    Тег #5
-                </div>
-                <div id="t6">
-                    Тег #6
-                </div>
-            </div>
-            <div class="date">01.01.1967</div>
-            <button class="go">ПЕРЕЙТИ</button>
-        </div>
-        <div class="card" id="5">
-            <div class="title">Title</div>
-            <div class="autor">Автор:</div>
-            <div class="categor">Категория:</div>
-                        <div class="tags">Теги: </br>
-                <div id="t1">
-                    Тег #1
-                </div>
-                <div id="t2">
-                    Тег #2
-                </div>
-                <div id="t3">
-                    Тег #3
-                </div>
-                <div id="t4">
-                    Тег #4
-                </div>
-                <div id="t5">
-                    Тег #5
-                </div>
-                <div id="t6">
-                    Тег #6
-                </div>
-            </div>
-            <div class="date">01.01.1967</div>
-            <button class="go">ПЕРЕЙТИ</button>
-        </div>
-    </div>
 
-    <h1>РЕКОМЕНДОВАННЫЕ КУРСЫ</h1>
-    <div class="List" id="rec">
-        <div class="card" id="1">
-            <div class="title">Title</div>
-            <div class="autor">Автор:</div>
-            <div class="categor">Категория:</div>
-                        <div class="tags">Теги: </br>
-                <div id="t1">
-                    Тег #1
+            <div id="filters">
+
+                <div class="entry">
+                    <p>Автор:</p>
+                    <input type="text" id="autor">
                 </div>
-                <div id="t2">
-                    Тег #2
+
+                <div class="entry">
+                    <p>Категория</p>
+                    <select id="category">
+                        <option>Категория</option>
+                        <option>IT</option>
+                        <option>Математика</option>
+                        <option>Физика</option>
+                        <option>Химия</option>
+                        <option>Здоровье</option>
+                        <option>Языки</option>
+                        <option>Искусство</option>
+                        <option>Кулинария</option>
+                        <option>Прочее</option>
+                    </select>
                 </div>
-                <div id="t3">
-                    Тег #3
+
+                <div class="entry">
+                    <p>Дата публикации</p>
+                    <select id="day"> 
+                        <option>День</option>
+                        <option>1</option>
+                    </select>
+                    <select id="month">
+                        <option>Месяц</option>
+                        <option>Март</option>
+                    </select>
+                    <select id="year">
+                        <option>Год</option>
+                        <option>2001</option>
+                    </select>
                 </div>
-                <div id="t4">
-                    Тег #4
-                </div>
-                <div id="t5">
-                    Тег #5
-                </div>
-                <div id="t6">
-                    Тег #6
-                </div>
-            </div>
-            <div class="date">01.01.1967</div>
-            <button class="go">ПЕРЕЙТИ</button>
-        </div>
-        <div class="card" id="2">
-            <div class="title">Title</div>
-            <div class="autor">Автор:</div>
-            <div class="categor">Категория:</div>
-                        <div class="tags">Теги: </br>
-                <div id="t1">
-                    Тег #1
-                </div>
-                <div id="t2">
-                    Тег #2
-                </div>
-                <div id="t3">
-                    Тег #3
-                </div>
-                <div id="t4">
-                    Тег #4
-                </div>
-                <div id="t5">
-                    Тег #5
-                </div>
-                <div id="t6">
-                    Тег #6
+
+                <div class="entry">
+                    <p>Теги:</p>
+                    <input type="text" id="tegs">
                 </div>
             </div>
-            <div class="date">01.01.1967</div>
-            <button class="go">ПЕРЕЙТИ</button>
         </div>
-        <div class="card" id="2">
-            <div class="title">Title</div>
-            <div class="autor">Автор:</div>
-            <div class="categor">Категория:</div>
-                        <div class="tags">Теги: </br>
-                <div id="t1">
-                    Тег #1
+    
+        <h1>ПОПУЛЯРНЫЕ КУРСЫ</h1>
+        <div class="List" id="popular">
+            <div class="card block" id="1">
+                <div class="title">Title</div>
+                <div class="autor">Автор:</div>
+                <div class="categor">Категория:</div>
+                <div class="tags">Теги: </br>
+                    <div id="t1">
+                        Тег #1
+                    </div>
+                    <div id="t2">
+                        Тег #2
+                    </div>
+                    <div id="t3">
+                        Тег #3
+                    </div>
+                    <div id="t4">
+                        Тег #4
+                    </div>
+                    <div id="t5">
+                        Тег #5
+                    </div>
+                    <div id="t6">
+                        Тег #6
+                    </div>
                 </div>
-                <div id="t2">
-                    Тег #2
-                </div>
-                <div id="t3">
-                    Тег #3
-                </div>
-                <div id="t4">
-                    Тег #4
-                </div>
-                <div id="t5">
-                    Тег #5
-                </div>
-                <div id="t6">
-                    Тег #6
-                </div>
+                <div class="date">01.01.1967</div>
+                <button class="go">ПЕРЕЙТИ</button>
             </div>
-            <div class="date">01.01.1967</div>
-            <button class="go">ПЕРЕЙТИ</button>
-        </div>
-        <div class="card" id="3">
-            <div class="title">Title</div>
-            <div class="autor">Автор:</div>
-            <div class="categor">Категория:</div>
-                        <div class="tags">Теги: </br>
-                <div id="t1">
-                    Тег #1
+            <div class="card block" id="2">
+                <div class="title">Title</div>
+                <div class="autor">Автор:</div>
+                <div class="categor">Категория:</div>
+                            <div class="tags">Теги: </br>
+                    <div id="t1">
+                        Тег #1
+                    </div>
+                    <div id="t2">
+                        Тег #2
+                    </div>
+                    <div id="t3">
+                        Тег #3
+                    </div>
+                    <div id="t4">
+                        Тег #4
+                    </div>
+                    <div id="t5">
+                        Тег #5
+                    </div>
+                    <div id="t6">
+                        Тег #6
+                    </div>
                 </div>
-                <div id="t2">
-                    Тег #2
-                </div>
-                <div id="t3">
-                    Тег #3
-                </div>
-                <div id="t4">
-                    Тег #4
-                </div>
-                <div id="t5">
-                    Тег #5
-                </div>
-                <div id="t6">
-                    Тег #6
-                </div>
+                <div class="date">01.01.1967</div>
+                <button class="go">ПЕРЕЙТИ</button>
             </div>
-            <div class="date">01.01.1967</div>
-            <button class="go">ПЕРЕЙТИ</button>
-        </div>
-        <div class="card" id="4">
-            <div class="title">Title</div>
-            <div class="autor">Автор:</div>
-            <div class="categor">Категория:</div>
-                        <div class="tags">Теги: </br>
-                <div id="t1">
-                    Тег #1
+            <div class="card block" id="2">
+                <div class="title">Title</div>
+                <div class="autor">Автор:</div>
+                <div class="categor">Категория:</div>
+                <div class="tags">Теги: </br>
+                    <div id="t1">
+                        Тег #1
+                    </div>
+                    <div id="t2">
+                        Тег #2
+                    </div>
+                    <div id="t3">
+                        Тег #3
+                    </div>
+                    <div id="t4">
+                        Тег #4
+                    </div>
+                    <div id="t5">
+                        Тег #5
+                    </div>
+                    <div id="t6">
+                        Тег #6
+                    </div>
                 </div>
-                <div id="t2">
-                    Тег #2
-                </div>
-                <div id="t3">
-                    Тег #3
-                </div>
-                <div id="t4">
-                    Тег #4
-                </div>
-                <div id="t5">
-                    Тег #5
-                </div>
-                <div id="t6">
-                    Тег #6
-                </div>
+                <div class="date">01.01.1967</div>
+                <button class="go">ПЕРЕЙТИ</button>
             </div>
-            <div class="date">01.01.1967</div>
-            <button class="go">ПЕРЕЙТИ</button>
-        </div>
-        <div class="card" id="5">
-            <div class="title">Title</div>
-            <div class="autor">Автор:</div>
-            <div class="categor">Категория:</div>
-                        <div class="tags">Теги: </br>
-                <div id="t1">
-                    Тег #1
+            <div class="card block" id="3">
+                <div class="title">Title</div>
+                <div class="autor">Автор:</div>
+                <div class="categor">Категория:</div>
+                            <div class="tags">Теги: </br>
+                    <div id="t1">
+                        Тег #1
+                    </div>
+                    <div id="t2">
+                        Тег #2
+                    </div>
+                    <div id="t3">
+                        Тег #3
+                    </div>
+                    <div id="t4">
+                        Тег #4
+                    </div>
+                    <div id="t5">
+                        Тег #5
+                    </div>
+                    <div id="t6">
+                        Тег #6
+                    </div>
                 </div>
-                <div id="t2">
-                    Тег #2
-                </div>
-                <div id="t3">
-                    Тег #3
-                </div>
-                <div id="t4">
-                    Тег #4
-                </div>
-                <div id="t5">
-                    Тег #5
-                </div>
-                <div id="t6">
-                    Тег #6
-                </div>
+                <div class="date">01.01.1967</div>
+                <button class="go">ПЕРЕЙТИ</button>
             </div>
-            <div class="date">01.01.1967</div>
-            <button class="go">ПЕРЕЙТИ</button>
+            <div class="card block" id="4">
+                <div class="title">Title</div>
+                <div class="autor">Автор:</div>
+                <div class="categor">Категория:</div>
+                            <div class="tags">Теги: </br>
+                    <div id="t1">
+                        Тег #1
+                    </div>
+                    <div id="t2">
+                        Тег #2
+                    </div>
+                    <div id="t3">
+                        Тег #3
+                    </div>
+                    <div id="t4">
+                        Тег #4
+                    </div>
+                    <div id="t5">
+                        Тег #5
+                    </div>
+                    <div id="t6">
+                        Тег #6
+                    </div>
+                </div>
+                <div class="date">01.01.1967</div>
+                <button class="go">ПЕРЕЙТИ</button>
+            </div>
+            <div class="card block" id="5">
+                <div class="title">Title</div>
+                <div class="autor">Автор:</div>
+                <div class="categor">Категория:</div>
+                            <div class="tags">Теги: </br>
+                    <div id="t1">
+                        Тег #1
+                    </div>
+                    <div id="t2">
+                        Тег #2
+                    </div>
+                    <div id="t3">
+                        Тег #3
+                    </div>
+                    <div id="t4">
+                        Тег #4
+                    </div>
+                    <div id="t5">
+                        Тег #5
+                    </div>
+                    <div id="t6">
+                        Тег #6
+                    </div>
+                </div>
+                <div class="date">01.01.1967</div>
+                <button class="go">ПЕРЕЙТИ</button>
+            </div>
         </div>
-    </div>
-    </div>
+
+        <h1>РЕКОМЕНДОВАННЫЕ КУРСЫ</h1>
+        <div class="List" id="rec">
+            <div class="card block" id="1">
+                <div class="title">Title</div>
+                <div class="autor">Автор:</div>
+                <div class="categor">Категория:</div>
+                            <div class="tags">Теги: </br>
+                    <div id="t1">
+                        Тег #1
+                    </div>
+                    <div id="t2">
+                        Тег #2
+                    </div>
+                    <div id="t3">
+                        Тег #3
+                    </div>
+                    <div id="t4">
+                        Тег #4
+                    </div>
+                    <div id="t5">
+                        Тег #5
+                    </div>
+                    <div id="t6">
+                        Тег #6
+                    </div>
+                </div>
+                <div class="date">01.01.1967</div>
+                <button class="go">ПЕРЕЙТИ</button>
+            </div>
+            <div class="card block" id="2">
+                <div class="title">Title</div>
+                <div class="autor">Автор:</div>
+                <div class="categor">Категория:</div>
+                            <div class="tags">Теги: </br>
+                    <div id="t1">
+                        Тег #1
+                    </div>
+                    <div id="t2">
+                        Тег #2
+                    </div>
+                    <div id="t3">
+                        Тег #3
+                    </div>
+                    <div id="t4">
+                        Тег #4
+                    </div>
+                    <div id="t5">
+                        Тег #5
+                    </div>
+                    <div id="t6">
+                        Тег #6
+                    </div>
+                </div>
+                <div class="date">01.01.1967</div>
+                <button class="go">ПЕРЕЙТИ</button>
+            </div>
+            <div class="card block" id="2">
+                <div class="title">Title</div>
+                <div class="autor">Автор:</div>
+                <div class="categor">Категория:</div>
+                            <div class="tags">Теги: </br>
+                    <div id="t1">
+                        Тег #1
+                    </div>
+                    <div id="t2">
+                        Тег #2
+                    </div>
+                    <div id="t3">
+                        Тег #3
+                    </div>
+                    <div id="t4">
+                        Тег #4
+                    </div>
+                    <div id="t5">
+                        Тег #5
+                    </div>
+                    <div id="t6">
+                        Тег #6
+                    </div>
+                </div>
+                <div class="date">01.01.1967</div>
+                <button class="go">ПЕРЕЙТИ</button>
+            </div>
+            <div class="card block" id="3">
+                <div class="title">Title</div>
+                <div class="autor">Автор:</div>
+                <div class="categor">Категория:</div>
+                            <div class="tags">Теги: </br>
+                    <div id="t1">
+                        Тег #1
+                    </div>
+                    <div id="t2">
+                        Тег #2
+                    </div>
+                    <div id="t3">
+                        Тег #3
+                    </div>
+                    <div id="t4">
+                        Тег #4
+                    </div>
+                    <div id="t5">
+                        Тег #5
+                    </div>
+                    <div id="t6">
+                        Тег #6
+                    </div>
+                </div>
+                <div class="date">01.01.1967</div>
+                <button class="go">ПЕРЕЙТИ</button>
+            </div>
+            <div class="card block" id="4">
+                <div class="title">Title</div>
+                <div class="autor">Автор:</div>
+                <div class="categor">Категория:</div>
+                            <div class="tags">Теги: </br>
+                    <div id="t1">
+                        Тег #1
+                    </div>
+                    <div id="t2">
+                        Тег #2
+                    </div>
+                    <div id="t3">
+                        Тег #3
+                    </div>
+                    <div id="t4">
+                        Тег #4
+                    </div>
+                    <div id="t5">
+                        Тег #5
+                    </div>
+                    <div id="t6">
+                        Тег #6
+                    </div>
+                </div>
+                <div class="date">01.01.1967</div>
+                <button class="go">ПЕРЕЙТИ</button>
+            </div>
+            <div class="card block" id="5">
+                <div class="title">Title</div>
+                <div class="autor">Автор:</div>
+                <div class="categor">Категория:</div>
+                            <div class="tags">Теги: </br>
+                    <div id="t1">
+                        Тег #1
+                    </div>
+                    <div id="t2">
+                        Тег #2
+                    </div>
+                    <div id="t3">
+                        Тег #3
+                    </div>
+                    <div id="t4">
+                        Тег #4
+                    </div>
+                    <div id="t5">
+                        Тег #5
+                    </div>
+                    <div id="t6">
+                        Тег #6
+                    </div>
+                </div>
+                <div class="date">01.01.1967</div>
+                <button class="go">ПЕРЕЙТИ</button>
+            </div>
+        </div>
+    </main>
 </body>
+<script src="/scripts/init.js"></script>
 </html>
