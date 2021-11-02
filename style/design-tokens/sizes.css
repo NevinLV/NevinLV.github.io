@@ -1,0 +1,42 @@
+@media (min-width: 480px) {
+    :root{
+        --margin-body: 50px 14vw;
+        --height-header: 100px;
+        --paddingTop-body: 60px;
+
+        --h1-size: 20pt;
+        --p-size: 14px;
+
+        --btn-size: 14px;
+
+        --card-width: 325px;
+        --card-height: 205px;  
+
+        --card-title: 24px;
+        --card-autor: 12pt;
+        --card-categ: 12pt;
+        --card-tegs: 12pt;
+        --card-date: 12pt;
+    }
+}
+@media only screen and (max-device-width: 480px) {
+    :root{
+        --margin-body: 50px 1vw;
+        --height-header: 400px;
+        --paddingTop-body: 400px;
+
+        --h1-size: 50pt;
+        --p-size: 35pt;
+
+        --btn-size: 40px;
+
+        --card-width: 100vw;
+        --card-height: 25vh;  
+
+        --card-title: 40pt;
+        --card-autor: 30pt;
+        --card-categ: 25pt;
+        --card-tegs: 25pt;
+        --card-date: 25pt;
+    }
+}

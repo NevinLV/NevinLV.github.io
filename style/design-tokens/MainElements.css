@@ -1,17 +1,15 @@
+@import url(sizes.css);
+
 body{
-    margin: 50px 14vw;
-    padding-top: 60px;
+    margin: var(--margin-body);
+    padding-top: var(--paddingTop-body);
     font-family: Arial;
     background-color: var(--white);
 }
 
 header{
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-top: 30px;
-
-    width: calc(100% - 120px);
-    height: 50px;
+    width: 100%;
+    height: var(--height-header);
 
     display: flex;
 
@@ -28,4 +26,13 @@ header{
 #user{
     position: absolute;
     right: 60px;
+    top: calc(50% - 18px);
+    
+    font-size: var(--p-size);
+}
+#logo{
+    position: absolute;
+    left: 60px;
+    top: calc(50% - 18px);
+    font-size: var(--h1-size);
 }

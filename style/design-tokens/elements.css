@@ -1,6 +1,8 @@
+@import url(sizes.css);
+
 /* Поля ввода */
 input{
-    font-size: px;
+    font-size: var(--p-size);
     background-color: var(--white);
     border-radius: 5px;
     border: none;
@@ -17,7 +19,7 @@ input:focus{
 /* Поля выбора */
 select{
     color: var(--gray);
-    font-size: 18px;
+    font-size: var(--p-size);
     background-color: var(--white);
     border-radius: 5px;
     border: none;
@@ -29,7 +31,7 @@ select{
 button{
     background-color: var(--black);
     color: var(--white);
-    font-size: 14px;
+    font-size: var(--btn-size);
     border-radius: 4px;
     padding: 8px 40px;
     text-align: center;
@@ -46,15 +48,15 @@ button:active {
 /* Заголовки */
 h1{
     font-weight: 100;
-    font-size: clamp(1.1rem, 0.7153rem + 1.6368vw, 1.5rem);
+    font-size: var(--h1-size);
 }
-
 
 /* Абзацы */
 p{
-    width: 150px;
     margin-bottom: 5px;
     position: relative;
+    font-size: var(--p-size);
+    font-weight: 100;
 }
 
 
@@ -80,28 +82,28 @@ p{
 
 /* Карты */
 .card{
-    width: 325px;
-    height: 205px;    
+    width: var(--card-width);
+    height: var(--card-height);    
     position: relative;
     flex: none;
 }
         /* Заголовок карты */
         .card .title{
-            font-size: 24px;
+            font-size: var(--card-title);
         }
         /* Автор */
         .card .autor{
-            font-size: 12px;
+            font-size: var(--card-autor);
             color: #444444;
             margin-bottom: 15px;
         }
         /* Категория */
         .card .categor{
-            font-size: 16px;
+            font-size: var(--card-categ);
         }
         /* Теги */
         .card .tags{
-            font-size: 15px;
+            font-size: var(--card-tegs);
             display: block;
             width: 100%;
         }
@@ -135,6 +137,7 @@ p{
                 }
         /* Дата */
         .card .date{
+            font-size: var(--card-date);
             position: absolute;
             bottom: 20px;
             left: 20px;

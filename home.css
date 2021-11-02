@@ -2,6 +2,7 @@
 @import url(style/design-tokens/elements.css);
 @import url(style/design-tokens/MainElements.css);
 
+
 #name{
     width: calc(100% - 300px);
 }
