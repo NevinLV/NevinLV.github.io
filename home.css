@@ -4,7 +4,7 @@
 
 
 #name{
-    width: calc(100% - 300px);
+    width: var(--name-input-size);
 }
 
 #filtersBtn{
