@@ -1,0 +1,115 @@
+@import url(design-tokens/colors.css);
+@import url(design-tokens/sizes.css);
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+}
+
+
+.Section{
+    width: 100%;
+    height: 100vh;
+}
+
+
+#section1{
+    background-color: var(--black);
+}
+#section2{
+    background-color: var(--white);
+}
+#section3{
+    background-color: var(--lgray);
+}
+#section4{
+    background-color: var(--gray);
+}
+#section5{
+    background-color: var(--black);
+}
+
+/* ==================== ПЕРЕЧЕНЬ СЕКЦИЙ СБОКУ ==================== */
+#board{
+    position: fixed;
+    top: 40%;
+    right: 0px;
+    color: var(--white);
+    text-align: right;
+    margin-right: 20px;
+}
+
+.point{
+    margin-bottom: 40px;
+}
+
+/* ==================== СЕКЦИЯ 1 ==================== */
+
+#section1 #btnSection{
+    text-align: var(--reg-centrir);
+    padding: 20px 50px;
+    font-size: var(--btn-size);
+}
+
+/* ВХОД И РЕГИСТРАЦИЯ */
+
+#signIn, #logIn{
+    border: 1px;
+    border-radius: 2px;
+    border-style: solid;
+    font-size: var(--btn-size);
+}
+
+#logIn{
+    border-color: var(--white);
+    background-color: var(--black);
+    color: var(--white);
+}
+#signIn{
+
+    border-color: var(--white);
+    background-color: var(--white);
+    color: var(--black);
+}
+
+/* ЛОГОТИП */
+
+#logo{
+    margin-top: 30vh;
+    text-align: center;
+}
+#section1 #C{
+    color: var(--white);
+    font-size: 48px;
+}
+#section1 #S{
+    color: var(--gray);
+    font-size: 75px;
+}
+
+/* ТЕКСТ СНИЗУ */
+
+#section1 #text{
+    position: absolute;
+    color: var(--gray);
+    bottom: 0px;
+    width: 100%;
+}
+#section1 #text p{
+
+    text-align: center;
+}
+
+/* ==================== СЕКЦИЯ 2 ==================== */
+h1{
+    padding-top: 15vh;
+    padding-left: 5vw;
+    margin-top: 0px;
+}
+
+h2{
+    margin-top: 0px;
+    padding-top: 15vh;
+    padding-left: 5vw;
+}

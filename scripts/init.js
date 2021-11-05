@@ -2,7 +2,7 @@ var f = false;
 function Filter() {
     if(!f)
     {
-        document.getElementById('filters').style.display='inline-block';
+        document.getElementById('filters').style.display='inline-flex';
         f = true;
     }
     else{
