@@ -40,8 +40,6 @@
         --btn-width: calc(50% - 15px);
         --btn-margin: 20px 0px 20px 10px;
 
-        --reg-centrir: center;
-
         --card-width: 70vw;
         --card-height: 25vh;  
 
@@ -50,5 +48,20 @@
         --card-categ: 25pt;
         --card-tegs: 25pt;
         --card-date: 25pt;
+    }
+}
+
+
+@media (min-width: 480px) {
+    :root{
+        --in-btn: 14px;
+        --reg-centrir: right;
+    }
+}
+
+@media only screen and (max-device-width: 480px) {
+    :root{
+        --in-btn: 14px;
+        --reg-centrir: center;
     }
 }
