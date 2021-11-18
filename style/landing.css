@@ -1,5 +1,6 @@
 @import url(design-tokens/colors.css);
 @import url(design-tokens/sizes.css);
+@import url(fonts/fonts.css);
 
 body{
     margin: 0px;
@@ -81,6 +82,7 @@ body{
 /* ЛОГОТИП */
 
 #logo{
+    font-family: 'Coda ExtraBold';
     margin-top: 30vh;
     text-align: center;
 }
