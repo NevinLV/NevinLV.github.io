@@ -9,6 +9,7 @@ input{
     padding: 10px 15px;
     width: 100%;
     display: inline-block;
+    
 }
 input:focus{
     background-color: var(--white);
@@ -46,11 +47,17 @@ button:active {
     background-color: black;
 }
 
+.search{
+    -webkit-box-shadow: 0px 5px 19px -5px rgba(30, 30, 30, 0.2);
+    -moz-box-shadow: 0px 5px 19px -5px rgba(30, 30, 30, 0.2);
+    box-shadow: 0px 5px 19px -5px rgba(30, 30, 30, 0.2);
+}
 
 /* Заголовки */
 h1{
     font-weight: 100;
     font-size: var(--h1-size);
+    padding-top: 20px;
 }
 
 /* Абзацы */
@@ -67,6 +74,7 @@ p{
     display: inline-flex;
     overflow-x: scroll; 
     width: 100%;
+    padding: 0px 20px 20px 20px;
 }
 .List::-webkit-scrollbar {
     width: 0;
@@ -88,10 +96,19 @@ p{
     height: var(--card-height);    
     position: relative;
     flex: none;
+    -webkit-box-shadow: 0px 5px 19px -5px rgba(30, 30, 30, 0.2);
+    -moz-box-shadow: 0px 5px 19px -5px rgba(30, 30, 30, 0.2);
+    box-shadow: 0px 5px 19px -5px rgba(30, 30, 30, 0.2);
 }
+        .card .lable{
+            display: flex;
+            position: relative;
+        }
         /* Заголовок карты */
         .card .title{
             font-size: var(--card-title);
+            width: calc(var(--card-width) - 120px);
+            font-weight: bold;
         }
         /* Автор */
         .card .autor{
@@ -99,9 +116,21 @@ p{
             color: #444444;
             margin-bottom: 15px;
         }
+        /* Изображение */
+        .card .img{
+            margin-right: 10px;
+            background-color: var(--lgray);
+            width: 110px;
+            height: 60px;
+            border-radius: 5px;
+            position: absolute;
+            right: 0px;
+
+        }
         /* Категория */
         .card .categor{
             font-size: var(--card-categ);
+            padding-top: 45px;
         }
         /* Теги */
         .card .tags{
@@ -119,24 +148,10 @@ p{
                     text-transform: uppercase;
                     display: inline-flex;
                 }
-                .tags #t1{
-                    background-color: var(--t1);
+                .tags > div{
+                    background-color: var(--llblack);
                 }
-                .tags #t2{
-                    background-color: var(--t2);
-                }
-                .tags #t3{
-                    background-color: var(--t3);
-                }
-                .tags #t4{
-                    background-color: var(--t4);
-                }
-                .tags #t5{
-                    background-color: var(--t5);
-                }
-                .tags #t6{
-                    background-color: var(--t6);
-                }
+
         /* Дата */
         .card .date{
             font-size: var(--card-date);
@@ -148,5 +163,51 @@ p{
         .card button{
             position: absolute;
             bottom: 20px;
-            right: 20px;
+            right: 30px;
         }
+
+    .small{
+            width: var(--small-card-width);
+            height: var(--small-card-hight);   
+            font-weight: lighter;
+            font-size: 20px;
+            border-radius: 10px;
+           
+    }
+
+    #IT{
+        background-color: var(--c1);
+        color: var(--tc1);
+    }
+    #MATH{
+        background-color: var(--c2);
+        color: var(--tc2);
+    }
+    #PHYSICS{
+        background-color: var(--c3);
+        color: var(--tc3);
+    }
+    #CHEMISTRY{
+        background-color: var(--c4);
+        color: var(--tc4);
+    }
+    #HEALTH{
+        background-color: var(--c5);
+        color: var(--tc5);
+    }
+    #ART{
+        background-color: var(--c6);
+        color: var(--tc6);
+    }
+    #MUSIC{
+        background-color: var(--c7);
+        color: var(--tc7);
+    }
+    #COOKERY{
+        background-color: var(--c8);
+        color: var(--tc8);
+    }
+    #OTHER{
+        background-color: var(--c9);
+        color: var(--tc9);
+    }

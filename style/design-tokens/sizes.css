@@ -16,13 +16,16 @@
         --reg-centrir: right;
 
         --card-width: 325px;
-        --card-height: 205px;  
+        --card-height: 220px;  
 
-        --card-title: 24px;
-        --card-autor: 12pt;
-        --card-categ: 12pt;
-        --card-tegs: 12pt;
+        --card-title: 11pt;
+        --card-autor: 10pt;
+        --card-categ: 10pt;
+        --card-tegs: 9pt;
         --card-date: 12pt;
+
+        --small-card-width: 160px;
+        --small-card-height: 150px;  
     }
 }
 @media only screen and (max-device-width: 480px) {
@@ -42,6 +45,9 @@
 
         --card-width: 70vw;
         --card-height: 25vh;  
+
+        --small-card-width: 10vw;
+        --small-card-height: 15vh;  
 
         --card-title: 40pt;
         --card-autor: 30pt;
