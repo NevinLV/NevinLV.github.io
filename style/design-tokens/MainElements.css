@@ -3,7 +3,7 @@
 body{
     margin: var(--margin-body);
     padding-top: var(--paddingTop-body);
-    font-family: Arial;
+    font-family:'Century Gothic';
     background-color: var(--white);
 }
 
