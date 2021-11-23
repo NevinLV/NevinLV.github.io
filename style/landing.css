@@ -16,19 +16,20 @@ body{
     width: 100%;
     height: 90vh;
     position: relative;
+    scroll-snap-type: y mandatory;
+    scroll-snap-align: start;
 }
 
 #section1{
     width: 100%;
     height: 100vh; 
+    scroll-snap-align: start;
 }
 
 #section5{
     width: 100%;
     height: 100vh; 
 }
-
-
 
 #section1{
     background-color: var(--black);
@@ -74,21 +75,57 @@ body{
 
 #signIn, #logIn{
     border: 1px;
-    border-radius: 2px;
     border-style: solid;
     font-size: var(--btn-size);
 }
 
-#logIn{
-    border-color: var(--white);
+
+
+/* Кнокпи */
+button{
     background-color: var(--black);
     color: var(--white);
+    font-size: var(--btn-size);
+    border-radius: 5px;
+    padding: 8px 40px;
+    margin: var(--btn-margin);
+    text-align: center;
+    border: none;
+    width: var(--btn-width);
 }
+button:hover{
+    background-color: var(--lblack);
+}
+button:active {
+    background-color: black;
+}
+
+#logIn{
+    border-color: var(--white);
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--white);
+}
+
+#logIn:hover{
+    background-color: var(--lblack);
+}
+#logIn:active {
+    background-color: black;
+}
+
 #signIn{
 
     border-color: var(--white);
     background-color: var(--white);
     color: var(--black);
+}
+
+#signIn:hover{
+    background-color: var(--lgray);
+    border-color: var(--lgray);
+}
+#signIn:active {
+    background-color: black;
 }
 
 /* ЛОГОТИП */
@@ -273,3 +310,4 @@ h2{
     padding-left: 5vw;
     width: 400px;
 }
+
