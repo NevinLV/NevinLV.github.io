@@ -39,6 +39,7 @@ button{
     text-align: center;
     border: none;
     width: var(--btn-width);
+    transition: 0.3s;
 }
 button:hover{
     background-color: var(--lblack);
@@ -76,9 +77,9 @@ p{
     width: 100%;
     padding: 0px 20px 20px 20px;
 }
-.List::-webkit-scrollbar {
+/* .List::-webkit-scrollbar {
     width: 0;
-}
+} */
 
 
 /* Блоки информации*/
@@ -88,10 +89,15 @@ p{
     margin-right: 10px;
     padding: 20px;
     margin-bottom: 10px;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
 }
 
 /* Карты */
 .card{
+    transition: 0.3s;
     width: var(--card-width);
     height: var(--card-height);    
     position: relative;
@@ -175,39 +181,87 @@ p{
            
     }
 
+.card:hover{
+    background-color: #f8f8f8;
+}
+
     #IT{
         background-color: var(--c1);
         color: var(--tc1);
+        transition: 0.3s;
     }
+    #IT:hover{
+        background-color: var(--ch1);
+    }
+
     #MATH{
         background-color: var(--c2);
         color: var(--tc2);
+         transition: 0.3s;
     }
+    #MATH:hover{
+        background-color: var(--ch2);
+    }
+
     #PHYSICS{
         background-color: var(--c3);
         color: var(--tc3);
+         transition: 0.3s;
     }
+    #PHYSICS:hover{
+        background-color: var(--ch3);
+    }
+
     #CHEMISTRY{
         background-color: var(--c4);
         color: var(--tc4);
+         transition: 0.3s;
     }
+    #CHEMISTRY:hover{
+        background-color: var(--ch4);
+    }
+
     #HEALTH{
         background-color: var(--c5);
         color: var(--tc5);
+         transition: 0.3s;
     }
+    #HEALTH:hover{
+        background-color: var(--ch5);
+    }
+
     #ART{
         background-color: var(--c6);
         color: var(--tc6);
+         transition: 0.3s;
     }
+    #ART:hover{
+        background-color: var(--ch6);
+    }
+
     #MUSIC{
         background-color: var(--c7);
         color: var(--tc7);
+         transition: 0.3s;
     }
+    #MUSIC:hover{
+        background-color: var(--ch7);
+    }
+
     #COOKERY{
         background-color: var(--c8);
         color: var(--tc8);
+         transition: 0.3s;
     }
+    #COOKERY:hover{
+        background-color: var(--ch8);
+    }
+
     #OTHER{
         background-color: var(--c9);
         color: var(--tc9);
+         transition: 0.3s;
+    }
+    #OTHER:hover{
+        background-color: var(--ch9);
     }
