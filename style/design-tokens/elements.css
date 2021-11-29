@@ -133,6 +133,11 @@ p{
             right: 0px;
 
         }
+        /* Описание */
+        .card .desk{
+            font-size: var(--card-categ);
+            padding-top: 0px;
+        }
         /* Категория */
         .card .categor{
             font-size: var(--card-categ);
